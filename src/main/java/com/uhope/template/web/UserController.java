@@ -25,6 +25,7 @@ public class UserController {
     private UserService userService;
     @GetMapping("/hello")
     public Result<PageInfo<UserDTO>> hello(@RequestParam(defaultValue = "") String var1,
+
                                            @RequestParam(defaultValue = "") Long var2,
                                            @RequestParam(defaultValue = "") String var3,
                                            @RequestParam(defaultValue = "") String var4,
